@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
       negative_prompt: '',
       seed: -1,
       prompt: prompt,
-    });
+    } as any);
 
     console.log('Image generated');
 
